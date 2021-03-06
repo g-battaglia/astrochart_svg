@@ -1,31 +1,33 @@
-# birthchartSVG
+# Astro Charts SVG
 
-Birthchart SVG is a chart generator based on Kerykeion and Opeanstro.
-Like the titles says it prints out SVG file of the birthchart,
+astro_svg is a chart generator based on Kerykeion and Opeanstro.
+Like the titles says it prints out SVG file of the chart,
 it's very easy to use.
 
 ```python
 # Install:
->>> pip3 install birthchartSVG
+>>> pip3 install astro_svg
 
 #Import:
->>> import birthchartSVG as br
+>>> import kerykeion as kr
+>>> from astrochart_svg import MakeInstance
 
-# Make the instance:
->>> kanye = br.MakeInstance("Kanye", 1977, 6, 8, 8, 45, "Atlanta")
+# Initialize the kerykeion objects with the astrological data:
+>>> first = kr.Calculator("Jack", 1990, 6, 15, 13, 00, "Montichiari")
+>>> second = kr.Calculator("Jane", 1991, 6, 11, 21, 00, "Cremona")
+
+# Initialize the astrochart_svg object:
+>>> name = MakeInstance(first, chart_type="Transit", second_obj=second)
 
 # Set the output directory for the SVG:
->>> kanye.set_dir = "/Users/{YourName}"
+>>> kanye.output_directory = "/Users/{YourName}"
 
-#Generate the SVG:
->>> kanye.makeSVG()
-
-
-SVG generated successfully!
+# Generate the SVG:
+>>> name.makeSVG()
 
 ```
+![alt text](https://raw.githubusercontent.com/g-battaglia/astrochart_SVG/master/sample.svg)
 
-![alt text](https://raw.githubusercontent.com/g-battaglia/birthchartSVG/master/birthchartSVG/template/sample.svg)
 
 ## Documentation
 
