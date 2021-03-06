@@ -13,8 +13,8 @@ it's very easy to use.
 >>> from astrochart_svg import MakeInstance
 
 # Initialize the kerykeion objects with the astrological data:
->>> first = kr.Calculator("Jack", 1990, 6, 15, 13, 00, "Montichiari")
->>> second = kr.Calculator("Jane", 1991, 6, 11, 21, 00, "Cremona")
+>>> first = kr.Calculator("Jack", 1990, 6, 15, 13, 00, "Brescia")
+>>> second = kr.Calculator("Jane", 1991, 6, 11, 21, 00, "Brescia")
 
 # Initialize the astrochart_svg object:
 >>> name = MakeInstance(first, chart_type="Transit", second_obj=second)
