@@ -8,14 +8,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="astrochart_svg",
-    version="1.0.1",
+    name="birthchartSVG", # Replace with your own username
+    version="1.0.0.1",
     author="Giacomo Battaglia",
     author_email="battaglia.giacomo@yahoo.it",
-    description="Chart SVG generator for astrology.",
+    description="Birthchart SVG generator for astrology.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/g-battaglia/astrochart_svg",
+    url="https://github.com/g-battaglia/birthchartSVG",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -24,5 +24,5 @@ setuptools.setup(
     ],
     include_package_data=True,
     python_requires='>=3.6',
-    install_requires = ['kerykeion'],
+    install_requires = ['pyswisseph', 'pytz', 'kerykeion'],
 )

@@ -1,33 +1,30 @@
-# Astro Charts SVG
+# birthchartSVG
 
-astro_svg is a chart generator based on Kerykeion and Opeanstro.
-Like the titles says it prints out SVG file of the chart,
+Birthchart SVG is a chart generator based on Kerykeion and Opeanstro.
+Like the titles says it prints out SVG file of the birthchart,
 it's very easy to use.
 
 ```python
 # Install:
->>> pip3 install astro_svg
+>>> pip3 install birthchartSVG
 
 #Import:
->>> import kerykeion as kr
->>> from astrochart_svg import MakeInstance
+>>> import birthchartSVG as br
 
-# Initialize the kerykeion objects with the astrological data:
->>> first = kr.Calculator("Jack", 1990, 6, 15, 13, 00, "Brescia")
->>> second = kr.Calculator("Jane", 1991, 6, 11, 21, 00, "Brescia")
-
-# Initialize the astrochart_svg object:
->>> name = MakeInstance(first, chart_type="Transit", second_obj=second)
+# Make the instance:
+>>> kanye = br.MakeInstance("Kanye", 1977, 6, 8, 8, 45, "Atlanta")
 
 # Set the output directory for the SVG:
->>> kanye.output_directory = "/Users/{YourName}"
+>>> kanye.set_dir = "/Users/{YourName}"
 
-# Generate the SVG:
->>> name.makeSVG()
+#Generate the SVG:
+>>> kanye.makeSVG()
+
+
+SVG generated successfully!
 
 ```
-![alt text](https://raw.githubusercontent.com/g-battaglia/astrochart_SVG/master/sample.svg)
-
+![alt text](https://raw.githubusercontent.com/g-battaglia/birthchartSVG/master/birthchartSVG/data/template/sample.svg)
 
 ## Documentation
 
@@ -36,8 +33,10 @@ The file generated has the name you inserted followed by Chart.svg
 
 ## Installation
 
-BirtchartSVG is Python 3 package, make sure you have Python 3 installed on your system.
+BirtchartSVG is Python 3 package, make sure you have Python 3 installed on your system. 
+
 
 ## Development
 
-You can clone this repository or download a zip file using the right side buttons.
+You can clone this repository or download a zip file using the right side buttons. 
+
